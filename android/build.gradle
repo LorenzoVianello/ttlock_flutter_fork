@@ -3,12 +3,11 @@ version '1.0'
 
 buildscript {
     ext {
-        agp_version = '4.1.2'
+        agp_version = '7.4.2'
     }
     repositories {
         mavenCentral()
         google()
-        jcenter()
     }
 
     dependencies {
@@ -20,7 +19,6 @@ rootProject.allprojects {
     repositories {
         mavenCentral()
         google()
-        jcenter()
         flatDir {
             dirs 'libs'
         }
@@ -30,7 +28,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 36
     namespace 'com.ttlock.ttlock_flutter'
     defaultConfig {
         minSdkVersion 18
@@ -39,8 +37,8 @@ android {
         disable 'InvalidPackage'
     }
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_8
-        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_11
     }
 }
 
