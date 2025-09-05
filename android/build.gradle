@@ -30,7 +30,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 34
     namespace 'com.ttlock.ttlock_flutter'
     defaultConfig {
         minSdkVersion 18
@@ -46,7 +46,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-   // implementation 'com.ttlock:ttlock:3.5.0'
     implementation 'com.google.code.gson:gson:2.6.2'
     implementation(name: 'ttlock-release', ext: 'aar')
     implementation 'com.squareup.okhttp3:okhttp:4.12.0'
